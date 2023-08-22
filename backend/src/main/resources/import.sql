@@ -1,2 +1,10 @@
-INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('Thallys', '011.231.321-12', '5000.00', TIMESTAMP WITH TIME ZONE '1997-06-22T00:12:31Z', 0);
-INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('Rafaela', '012.233.326-19', '10000.00', TIMESTAMP WITH TIME ZONE '2000-07-13T13:12:31Z', 0);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('Thallys Reis', '011.231.321-12', '5000.00', TIMESTAMP WITH TIME ZONE '1997-07-11T00:12:31Z', 0);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('Rafaela Mota', '012.233.326-19', '10000.00', TIMESTAMP WITH TIME ZONE '2000-07-13T13:17:37Z', 0);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('Clara Reis', '010.633.826-19', '2000.00', TIMESTAMP WITH TIME ZONE '1973-05-24T08:32:42Z', 2);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('Allys Soares', '009.933.432-59', '1000.00', TIMESTAMP WITH TIME ZONE '1968-09-05T03:40:23Z', 2);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('Cecilia Reis', '223.676.421-63', '0.00', TIMESTAMP WITH TIME ZONE '2018-07-31T23:55:55Z', 0);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('Heloisa Reis', '228.930.873-50', '0.00', TIMESTAMP WITH TIME ZONE '2022-12-24T11:32:25Z', 0);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('Gerson Goncalves', '012.930.873-50', '4000.00', TIMESTAMP WITH TIME ZONE '1970-02-16T20:32:25Z', 3);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('Lucia Helena', '022.632.783-90', '3000.00', TIMESTAMP WITH TIME ZONE '1975-10-09T11:40:25Z', 3);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('Thais Reis', '010.691.563-45', '5000.00', TIMESTAMP WITH TIME ZONE '1996-05-31T07:31:13Z', 1);
+INSERT INTO tb_client(name, cpf, income, birth_date, children) VALUES ('Yuri Ramalho', '010.421.455-63', '20000.00', TIMESTAMP WITH TIME ZONE '1996-02-10T09:10:49Z', 1);

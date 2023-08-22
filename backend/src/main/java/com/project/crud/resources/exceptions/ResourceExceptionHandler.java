@@ -1,6 +1,5 @@
 package com.project.crud.resources.exceptions;
 
-
 import java.time.Instant;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,9 +14,9 @@ import com.project.crud.services.exceptions.ResourceNotFoundException;
 
 @ControllerAdvice
 public class ResourceExceptionHandler {
-	
+
 	@ExceptionHandler(ResourceNotFoundException.class)
-	public ResponseEntity<StandardError> entityNotFound(ResourceNotFoundException e, HttpServletRequest request){
+	public ResponseEntity<StandardError> entityNotFound(ResourceNotFoundException e, HttpServletRequest request) {
 		HttpStatus status = HttpStatus.NOT_FOUND;
 		StandardError err = new StandardError();
 		err.setTimestamp(Instant.now());
@@ -25,12 +24,12 @@ public class ResourceExceptionHandler {
 		err.setError("Resource Not Found");
 		err.setMessage(e.getMessage());
 		err.setPath(request.getRequestURI());
-	
+
 		return ResponseEntity.status(status).body(err);
 	}
-	
+
 	@ExceptionHandler(DatabaseException.class)
-	public ResponseEntity<StandardError> database(DatabaseException e, HttpServletRequest request){
+	public ResponseEntity<StandardError> database(DatabaseException e, HttpServletRequest request) {
 		HttpStatus status = HttpStatus.BAD_REQUEST;
 		StandardError err = new StandardError();
 		err.setTimestamp(Instant.now());
@@ -38,7 +37,7 @@ public class ResourceExceptionHandler {
 		err.setError("Database exception");
 		err.setMessage(e.getMessage());
 		err.setPath(request.getRequestURI());
-	
+
 		return ResponseEntity.status(status).body(err);
 	}
 }
